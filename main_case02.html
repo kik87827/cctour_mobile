@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="./css/common_re.css" rel="stylesheet"><!-- 템플릿 사이트 common -->
+	<link href="./css/layout.css" rel="stylesheet">
+	<link href="./css/swiper.min.css" rel="stylesheet">
+	<link href="./css/jqueryui.css" rel="stylesheet"><!-- 230615 추가 -->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/dynamicListener.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/jquery-ui.js"></script><!-- 230615 추가 -->
+	<script src="./js/front.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<!-- header -->
+		<header class="header_wrap">
+			<a href="javascript:;" class="btn_hdtotal">
+				<span class="btn_hdtotal_in"></span>
+			</a>
+			<h1 class="toplogo">
+				<a href="#" class="toplogo_link"><img src="./images/toplogo.png" alt=""></a>
+			</h1>
+			<div class="header_util_wrap">
+				<a href="javascript:;" class="btn_hd ico_search"></a>
+				<a href="javascript:;" class="btn_hd ico_men"></a>
+			</div>
+			<!-- mobile menu -->
+			<div class="mobile_mainmenu_zone">
+				<div class="mainmenu_dim"></div>
+				<div class="mobile_mainmenu_wrap">
+					<div class="mbutil_low">
+						<!-- 로그인 전 -->
+						<div class="mbutil_item_list">
+							<div class="mbutil_item">
+								<span class="mbutil_prof_thum"></span>
+								<span class="mbutil_prof_text">로그인</span>
+							</div>
+							<a href="#" class="btn_mbutil_box">회원가입</a>
+						</div>
+						<!-- // 로그인 전 -->
+						<!-- 로그인 후 -->
+						<!-- <div class="mbutil_item_list">
+							<div class="mbutil_item">
+								<span class="mbutil_prof_thum"></span>
+								<span class="mbutil_prof_text">로그아웃</span>
+							</div>
+							<a href="#" class="btn_mbutil_box">마이페이지</a>
+						</div> -->
+						<!-- // 로그인 후 -->
+					</div>
+					<div class="mbmenu_low">
+						<div class="mbmenu_inwrap">
+							<ul class="mbmenu_vlist">
+								<li>
+									<a href="#" class="mbmenu_one">항공권</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 1</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 2</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 3</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">해외골프여행</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 1</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 2</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 3</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">국내골프여행</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 1</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 2</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 3</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">해외패키지</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 1</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 2</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 3</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">무인/부산/인천출발</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 1</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 2</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 3</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="mbmenu_one">고객센터</a>
+									<div class="mbmenu_two_wrap">
+										<ul class="mbmenu_two_list">
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 1</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 2</a></li>
+											<li><a href="#" class="mbmenu_two">투뎁스메뉴 3</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="btn_mbmenuclose">
+						<span class="hdtext">메인메뉴 닫기</span>
+					</a>
+				</div>
+			</div>
+			<!-- // mobile menu -->
+		</header>
+		<!-- // header -->
+		<!-- middle -->
+		<section class="middle_wrap">
+			<div class="mv_wrap">
+				<a href="javascript:;" class="btn_mv_control prev_control"><span class="hdtext">이전</span></a>
+				<div class="swiper-container mv_container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="mv_item">
+								<img src="./images/mv_01.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mv_item">
+								<img src="./images/mv_02.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mv_control_paging_wrap">
+					<div class="mv_control_paging">
+
+					</div>
+				</div>
+				<div class="swiper-count-wrap">
+					<span class="swiper-count">1</span>
+					<span class="swiper-part">/</span>
+					<span class="swiper-length">10</span>
+					<span class="swiper-more">+</span>
+				</div>
+				<a href="javascript:;" class="btn_mv_control next_control"><span class="hdtext">다음</span></a>
+				<!-- mv_form_wrap -->
+                <div class="mv_form_wrap">
+                    <div class="mv_form_fxwrap">
+						<a href="#" class="mv_form_item ico_map" id="form_map"><span class="mv_form_item_text">지역</span></a>
+						<a href="#" class="mv_form_item ico_date" id="form_date"><span class="mv_form_item_text">출발일</span></a>
+						<a href="#" class="mv_form_item ico_search" id="form_search"><span class="mv_form_item_text">검색어</span></a>
+					</div>
+                </div>
+                <!-- // mv_form_wrap -->
+			</div>
+			<div class="mc_wrap">
+				<div class="mc_row mc_bannercard_wrap">
+					<a href="#" class="mc_bannercard">
+						<div class="mc_bannercard_spec">
+							<div class="mc_bannercard_copy_g">
+								<div class="mc_bannercard_copy">씨씨투어와 함께하는</div>
+								<span class="bcard_emp"><span class="bcard_emp_text">해외골프여행</span></span>
+							</div>
+							<div class="mc_banner_btn_row"><span class="btn_mcbanner_tail">자세히보기</span></div>
+						</div>
+						<div class="mc_bannercard_thum">
+							<img src="images/temp_184x184_01.jpg" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="mc_row mc_tc">
+					<div class="mc_title_row"><p class="mc_title">무안출발 - 해외골프</p></div>
+					<div class="mc_content_row">
+						<!--  -->
+						<div class="swiper-container this_public_swiper scroll_type">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner type2">
+										<div class="thum_rows">
+											<img src="./images/temp_580x400.png" alt="">
+											<span class="badge">
+												<span class="badge_text">해외골프</span>
+												<span class="badge_icon"></span>
+											</span>
+										</div>
+										<div class="spec_rows">
+											<div class="spec_copy_wrap">
+												<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+												<div class="spec_copy_sub">무안출발</div>
+											</div>
+											<div class="spec_price_wrap">
+												<div class="price_num_group">
+													<span class="price_num_value">1,290,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner type2">
+										<div class="thum_rows">
+											<img src="./images/temp_580x400_2.png" alt="">
+											<span class="badge">
+												<span class="badge_text">해외골프</span>
+												<span class="badge_icon"></span>
+											</span>
+										</div>
+										<div class="spec_rows">
+											<div class="spec_copy_wrap">
+												<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+												<div class="spec_copy_sub">무안출발</div>
+											</div>
+											<div class="spec_price_wrap">
+												<div class="price_num_group">
+													<span class="price_num_value">1,290,000</span>
+													<span class="price_num_unit">원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner type2">
+										<div class="thum_rows">
+											<img src="./images/temp_580x400.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<div class="spec_copy_wrap">
+												<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+												<div class="spec_copy_sub">무안출발</div>
+											</div>
+											<div class="spec_price_wrap">
+												<div class="price_num_group">
+													<span class="price_num_value">1,290,000</span>
+													<span class="price_num_unit">원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-pagination mc-pagination"></div>
+						</div>
+						<!-- // -->
+					</div>
+				</div>
+				<div class="mc_row mc_bannercard_wrap">
+					<a href="#" class="mc_bannercard type2">
+						<div class="mc_bannercard_spec">
+							<div class="mc_bannercard_copy_g">
+								<div class="mc_bannercard_copy">씨씨투어와 함께하는</div>
+								<span class="bcard_emp"><span class="bcard_emp_text">맞춤 여행</span></span>
+							</div>
+							<div class="mc_banner_btn_row"><span class="btn_mcbanner_tail">자세히보기</span></div>
+						</div>
+						<div class="mc_bannercard_thum">
+							<img src="images/temp_184x184_02.jpg" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="mc_row mc_tc">
+					<div class="mc_title_row"><p class="mc_title">무안출발 - 해외패키지</p></div>
+					<div class="mc_content_row">
+						<!-- card -->
+						<div class="swiper-container mc_gallery_container type2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<ul class="mc_gcard_list">
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+													<span class="badge type2">
+														<span class="badge_text">해외패키지</span>
+														<span class="badge_icon"></span>
+													</span>
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+													<span class="badge type2">
+														<span class="badge_text">해외패키지</span>
+														<span class="badge_icon"></span>
+													</span>
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+													<span class="badge type2">
+														<span class="badge_text">해외패키지</span>
+														<span class="badge_icon"></span>
+													</span>
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul class="mc_gcard_list">
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+													<span class="badge type2">
+														<span class="badge_text">해외패키지</span>
+														<span class="badge_icon"></span>
+													</span>
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+													<span class="badge type2">
+														<span class="badge_text">해외패키지</span>
+														<span class="badge_icon"></span>
+													</span>
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/temp_640x400.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<div class="spec_copy_wrap">
+														<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+														<div class="spec_copy_sub">무안출발</div>
+													</div>
+													<div class="spec_price_wrap">
+														<div class="price_num_group">
+															<span class="price_num_value">1,290,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-pagination mc-pagination"></div>
+						</div>
+						<!-- // card -->
+					</div>
+				</div>
+				<div class="mc_row mc_bannercard_wrap">
+					<a href="#" class="mc_bannercard type3">
+						<div class="mc_bannercard_spec">
+							<div class="mc_bannercard_copy_g">
+								<div class="mc_bannercard_copy">해외 패키지</div>
+								<span class="bcard_emp"><span class="bcard_emp_text">이벤트 특가 상품</span></span>
+							</div>
+							<div class="mc_banner_btn_row"><span class="btn_mcbanner_tail">자세히보기</span></div>
+						</div>
+						<div class="mc_bannercard_thum">
+							<img src="images/temp_184x184_03.jpg" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="mc_row mc_tc">
+					<div class="mc_title_row type2">
+						<p class="mc_title_eng">MD PICK</p>
+						<p class="mc_title_kor">국내골프 추천상품</p>
+					</div>
+					<div class="mc_content_row type2">
+						<div class="mctab_list_layer">
+							<ul class="mctab_list">
+								<li><a href="#mctab_cont01" class="mctab active">전라남도</a></li>
+								<li><a href="#mctab_cont02" class="mctab">강원도</a></li>
+								<li><a href="#mctab_cont03" class="mctab">충청남도</a></li>
+							</ul>
+						</div>
+						<div class="mctab_cont_group">
+							<!--  -->
+							<div class="box_gallery_wrap">
+								<ul class="box_gallery_list">
+									<li>
+										<a href="#" class="mc_thumbanner">
+											<div class="thum_rows">
+												<img src="./images/temp_640x400.png" alt="">
+											</div>
+											<div class="spec_rows">
+												<div class="spec_copy_wrap">
+													<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+													<div class="spec_copy_sub">무안출발</div>
+												</div>
+												<div class="spec_price_wrap">
+													<div class="price_num_group">
+														<span class="price_num_value">1,290,000</span>
+														<span class="price_num_unit">원~</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="mc_thumbanner">
+											<div class="thum_rows">
+												<img src="./images/temp_640x400_2.png" alt="">
+											</div>
+											<div class="spec_rows">
+												<div class="spec_copy_wrap">
+													<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+													<div class="spec_copy_sub">무안출발</div>
+												</div>
+												<div class="spec_price_wrap">
+													<div class="price_num_group">
+														<span class="price_num_value">1,290,000</span>
+														<span class="price_num_unit">원~</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="mc_thumbanner">
+											<div class="thum_rows">
+												<img src="./images/temp_640x400.png" alt="">
+											</div>
+											<div class="spec_rows">
+												<div class="spec_copy_wrap">
+													<div class="spec_copy_main">[품격] 다낭&호이안 3박5일</div>
+													<div class="spec_copy_sub">무안출발</div>
+												</div>
+												<div class="spec_price_wrap">
+													<div class="price_num_group">
+														<span class="price_num_value">1,290,000</span>
+														<span class="price_num_unit">원~</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- // -->
+						</div>
+					</div>
+				</div>
+				<div class="mc_row mc_bannercard_wrap">
+					<a href="#" class="mc_bannercard type4">
+						<div class="mc_bannercard_spec">
+							<div class="mc_bannercard_copy_g">
+								<div class="mc_bannercard_copy">씨씨투어</div>
+								<span class="bcard_emp"><span class="bcard_emp_text">찐 여행후기</span></span>
+							</div>
+							<div class="mc_banner_btn_row"><span class="btn_mcbanner_tail">자세히보기</span></div>
+						</div>
+						<div class="mc_bannercard_thum">
+							<img src="images/temp_184x184_04.jpg" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="mc_row mc_vcustomer">
+					<ul class="customer_list">
+						<li>
+							<div class="customer_boxitem">
+								<div class="customer_boxico"></div>
+								<div class="customer_boxspec">
+									<p class="customer_boxlabel">씨씨투어 고객센터</p>
+									<div class="customer_main_flex">
+										<p class="customer_box_main">061-535-3352</p>
+										<span class="customer_box_sub">평일 09:00 ~ 18:00</span>
+									</div>
+									<ul class="customer_tail_list">
+										<li>점심시간 12:00 ~ 13:00</li>
+										<li>토요일/일요일/공휴일은 휴무</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="customer_boxitem type2">
+								<div class="customer_boxico"></div>
+								<div class="customer_boxspec">
+									<p class="customer_info_label">BANK INFO</p>
+									<div class="bank_main_flex">
+										<p class="bank_main_sub">국민은행</p>
+										<div class="bank_main_text_g">
+											<p class="bank_main_text">1127-020-158310(국내)</p>
+											<p class="bank_main_text">1127-020-158332(해외)</p>
+										</div>
+									</div>
+									<p class="bank_tail_guide">예금주 씨씨투어(주)</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- // middle -->
+		<!-- footer -->
+		<footer class="footer_wrap">
+			<div class="footer_else_group">
+				<div class="footer_else_row">
+					<p class="footer_else_title">씨씨투어 SNS 공식채널</p>
+					<ul class="footer_sns_list">
+						<li><a href="#" class="sns_item sns_kakao" target="_blank"><span class="hdtext">kakao</span></a></li>
+						<li><a href="#" class="sns_item sns_blog" target="_blank"><span class="hdtext">blog</span></a></li>
+						<li><a href="#" class="sns_item sns_bend" target="_blank"><span class="hdtext">벤드</span></a></li>
+						<li><a href="#" class="sns_item sns_tr" target="_blank"><span class="hdtext">티알</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_menu_group">
+				<ul class="footer_menu_list">
+					<li><a href="#" class="footer_menu">로그인</a></li>
+					<li><a href="#" class="footer_menu">고객센터</a></li>
+					<li><a href="#" class="footer_menu">공지사항</a></li>
+					<li><a href="#" class="footer_menu">회사소개</a></li>
+				</ul>
+			</div>
+			<div class="footer_main_group">
+				<div class="footer_copyitem_list_wrap">
+					<p class="footer_copymain">(주)씨씨투어</p>
+					<ul class="footer_copyitem_list">
+						<li class="full"><span class="footer_copyitem">대표 : 최상희</span></li>
+						<li class="full"><span class="footer_copyitem">주소 : 전라남도 해남군 해남읍 고도1길 14 105호</span></li>
+						<li class="full"><span class="footer_copyitem">전화번호 : 061-535-3352</span></li>
+						<li class="full"><span class="footer_copyitem">팩스 : 061-536-3352</span></li>
+						<li class="full"><span class="footer_copyitem">이메일 : hee-3550@hanmail.net</span></li>
+						<li class="full"><span class="footer_copyitem">사업자등록번호 : 122-88-00953</span></li>
+						<li class="full"><span class="footer_copyitem">통신판매업신고번호 : 제2018-전남해남-0017호</span></li>
+					</ul>
+				</div>
+				<p class="footer_copyright">COPYRIGHT ⒸCCTOUR 2011. ALL RIGHTS RESERVED.</p>
+				<div class="footer_menu_sub_list_wrap">
+					<ul class="footer_menu_sub_list">
+						<li><a href="#" class="footer_menu_sub">개인정보취급방침</a></li>
+						<li><a href="#" class="footer_menu_sub">이용약관</a></li>
+						<li><a href="#" class="footer_menu_sub">해외여행약관</a></li>
+						<li><a href="#" class="footer_menu_sub">국내여행약관</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- // footer -->
+
+		<script>
+			mainVisual();
+
+			document.addEventListener("DOMContentLoaded",()=>{
+				document.querySelector("#form_map").addEventListener("click",(e)=>{
+					e.preventDefault();
+					showPopup("#modal_map");
+				});
+				segmentBox("#modal_map","#form_map .mv_form_item_text"); // 지역선택
+
+				document.querySelector("#form_date").addEventListener("click",(e)=>{
+					e.preventDefault();
+					showPopup("#modal_date");
+				});
+
+				document.querySelector("#btn_start_date_submit").addEventListener("click",(e)=>{
+					e.preventDefault();
+					document.querySelector("#form_date .mv_form_item_text").textContent = document.querySelector("#modal_date").getAttribute("data-date");
+				});
+
+				document.querySelector("#form_search").addEventListener("click",(e)=>{
+					e.preventDefault();
+					showPopup("#modal_search");
+				});
+
+				mcPublicPro();
+				mcGalleryPro();
+				tabActiveFunc(".mctab_list .mctab");
+			});
+			$(function(){
+                var start_date_div = $("#start_date_div");
+                var date_div_parent = start_date_div.parents(".modal_zone"); 
+                // 픽업 레이어 달력
+                start_date_div.datepicker({
+                    beforeShow: function () {
+                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                        parentDateUpdate();
+                    },
+                    onSelect: function () {
+                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                        parentDateUpdate();
+                    },
+                    onChangeMonthYear: function () {
+                        start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                        parentDateUpdate();
+                    }
+                });
+                start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+                parentDateUpdate();
+                
+
+                function parentDateUpdate(){
+                    var getDate = start_date_div.datepicker("getDate");
+                    var monthText = String(getDate.getMonth()).length == 1 ? `0${getDate.getMonth()+1}` : getDate.getMonth()+1;
+                    var dateText = String(getDate.getDate()).length == 1 ? `0${getDate.getDate()}` : getDate.getDate();
+                    date_div_parent.attr("data-date",getDate.getFullYear()+"-"+monthText+"-"+dateText)
+                }
+            });
+		</script>
+
+
+		<!-- modal -->
+		<div class="modal_zone" id="modal_map">
+			<div class="modal_box_wrap">
+				<div class="dim"></div>
+				<div class="modal_box">
+					<div class="modal_title_row"><h2 class="modal_title">지역선택</h2></div>
+					<div class="modal_content_row">
+						<div class="segment_vitem">
+                            <a href="javascript:;" class="segment_vtitle chk_vtext">항공권</a>
+                            <ul class="segment_vlist">
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">무안출발</a></li>
+                            </ul>
+                        </div>
+                        <div class="segment_vitem">
+                            <a href="javascript:;" class="segment_vtitle chk_vtext">해외골프여행</a>
+                            <ul class="segment_vlist">
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">베트남</a></li>
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">일본</a></li>
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">미주</a></li>
+                                <li><a href="javascript:;" class="segment_text_item chk_vtext">몽골</a></li>
+                            </ul>
+                        </div>
+					</div>
+					<div class="modal_btn_row">
+						<a href="#" class="btn_psubmit close_trigger">적용</a>
+					</div>
+					<a href="#" class="btn_modal_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="modal_zone" id="modal_date">
+			<div class="modal_box_wrap">
+				<div class="dim"></div>
+				<div class="modal_box">
+					<div class="modal_title_row"><h2 class="modal_title">출발일선택</h2></div>
+					<div class="modal_content_row">
+						<div class="insert_date_parent" id="start_date_div"></div>
+					</div>
+					<div class="modal_btn_row">
+						<a href="#" class="btn_psubmit close_trigger" id="btn_start_date_submit">적용</a>
+					</div>
+					<a href="#" class="btn_modal_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="modal_zone" id="modal_search">
+			<div class="modal_box_wrap">
+				<div class="dim"></div>
+				<div class="modal_box">
+					<div class="modal_content_row only_cont">
+						<div class="search_field_boxwrap">
+							<p class="search_field_copy">검색어를 입력해주세요</p>
+							<div class="search_field_box">
+								<input type="text" placeholder="상품명을 입력해주세요." class="mv_field_input">
+								<a href="#" class="btn_search_mv_submit"><span class="hdtext">검색</span></a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn_modal_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- // modal -->
+	</div>
+</body>
+
+</html>
