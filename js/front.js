@@ -90,9 +90,9 @@ function layoutFunc(){
             setTimeout(function(){
                 mobile_mainmenu_zone.classList.add("motion");
                 if(touchstart){
-                    domBody.setAttribute("data-scr", window.pageYOffset);
-                    domBody.style.marginTop = -window.pageYOffset + "px";
-                    domHtml.classList.add("touchDis");
+                    // domBody.setAttribute("data-scr", window.pageYOffset);
+                    // domBody.style.marginTop = -window.pageYOffset + "px";
+                    domHtml.classList.add("touch_disabled");
                 }
             },30);
         }
@@ -100,9 +100,9 @@ function layoutFunc(){
             mobile_mainmenu_zone.classList.remove("motion");
             setTimeout(function(){
                 mobile_mainmenu_zone.classList.remove("active");
-                domHtml.classList.remove("touchDis");
-                domBody.style.marginTop = 0;
-                window.scrollTo(0, parseInt(domBody.getAttribute("data-scr")));
+                domHtml.classList.remove("touch_disabled");
+                // domBody.style.marginTop = 0;
+                // window.scrollTo(0, parseInt(domBody.getAttribute("data-scr")));
             },500);
         }
 
