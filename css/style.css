@@ -260,7 +260,7 @@ li.nodata_li{padding:100px 20px;text-align: center;display:block !important;}
 .modal_btn_row{flex:0;text-align: center;padding:0;border-top:1px solid #d9d9d9;}
 .modal_btn_row .btn_psubmit{padding:15px 45px;display:block;text-align: center;font-family:'Noto Sans KR'; font-weight:700;font-size:16px;}
 .modal_title{display:inline-block;font-size:14px;}
-.modal_content_row{flex:1;min-height:0;padding:20px;position:relative;overflow-y:auto;}
+.modal_content_row{flex:1;min-height:0;padding:10px 20px;position:relative;overflow-y:auto;}
 .modal_content_row.only_cont{}
 .segment_btn_list{}
 .segment_btn_list > li{margin-bottom:7.5px;}
@@ -288,7 +288,7 @@ li.nodata_li{padding:100px 20px;text-align: center;display:block !important;}
 .insert_date_parent .ui-datepicker{width:100%;}
 
 .search_field_boxwrap{padding:20px 0;font-family: 'Noto Sans KR';}
-.search_field_copy{text-align: center;font-size:18px;font-weight:bold;margin-bottom:10px;}
+.search_field_copy{text-align: center;font-size:16px;font-weight:bold;margin-bottom:10px;}
 .search_field_box{border:1px solid #d9d9d9;border-radius: 10px;position:relative;overflow: hidden;display:flex;align-items:center;}
 input.mv_field_input{outline:0;flex:1;min-width:0;border:0;padding:10px 0 10px 15px;width:100%;line-height:1;font-size:16px;-webkit-border-radius:0;height:50px;font-family:'Noto Sans KR'; }
 .btn_search_mv_submit{display:inline-block;width:50px;height:50px;flex:0 0 50px;background:url("../images/btn_mv_searchsubmit.png") no-repeat 50% 50%/20px auto;}
