@@ -41,7 +41,8 @@ body{overflow-x:visible;height:auto;}
 strong{font-weight:500;}
 .hdtext{display:inline-block;width:0;height:0;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
 html.smooth {scroll-behavior: smooth;}
-.touch_disabled{touch-action: none;position:relative;}
+.touch_disabled{overflow:hidden;touch-action: none;position:relative;padding-top:55px;}
+.touch_disabled .header_wrap{position:fixed;}
 .page_wrap{min-width:280px;}
 
 /* header */
